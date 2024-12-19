@@ -1,0 +1,181 @@
+   /* styles.css */
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    background: linear-gradient(to right, #00bcf2, #00b294);
+    background-attachment: fixed;
+}
+
+/* Header Section */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar */
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+}
+
+
+/* Hero Section */
+#hero-section {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#hero-section p {
+    font-size: 1.2em;
+}
+
+/* Course Section */
+.course {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.course h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.course h2 {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.course p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.course-col {
+    flex: 1 1 300px;
+    background: #000;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Section */
+.video {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    margin-bottom: 20px;
+}
+
+/* Tennis Sections */
+.tennis, .tennis2, .tennis3, .tennishis {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.tennis img, .tennis2 img, .tennis3 img, .tennishis img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.tennis p, .tennis2 p, .tennis3 p, .tennistext p {
+    text-align: justify;
+    font-family: serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero-section h2 {
+        font-size: 2em;
+    }
+
+    #hero-section p {
+        font-size: 1em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .course-col {
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
